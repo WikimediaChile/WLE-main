@@ -1,0 +1,51 @@
+// Import custom font from Google
+@import url('https://fonts.googleapis.com/css?family=Merriweather'); // Override fonts
+$font-family-sans-serif: 'Merriweather', sans-serif;
+$font-family-serif: Georgia, 'Times New Roman', Times, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+$font-family-base: $font-family-sans-serif; // Set global options
+$enable-shadows: false;
+$enable-gradients: true;
+$primary-svg: #339966;
+$primary: #1D5779;
+$normal-font: 400;
+svg {
+  margin: 0 auto;
+  height: auto !important;
+  width: auto !important;
+  display: block;
+}
+
+.descripcion {
+  padding: 10px;
+}
+
+.tipo {
+  color: gray;
+  font-weight: $normal-font*2;
+  font-size: 0.8rem;
+}
+
+.organizacion {
+  @extend .tipo;
+  color: black;
+  font-weight: $normal-font;
+  font-size: 0.9rem;
+}
+
+.advertencia {
+  @extend .tipo;
+  font-weight: $normal-font;
+}
+
+h4 span.lugar, {
+  @extend .tipo;
+  font-weight: $normal-font;
+  font-style: italic;
+}
+
+.card-img-bottom {
+  color: #fff;
+  height: 20rem;
+  background-size: cover!important;
+}
